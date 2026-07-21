@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node src/app.ts",
-    "dev:nodemon": "nodemon",
+    "dev": "tsx --watch src/app.ts -b 5 -s",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js"
   },
@@ -13,10 +12,13 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@types/node": "^20.12.12",
-    "nodemon": "^3.1.0",
+    "@types/node": "^20.19.43",
+    "@types/yargs": "^17.0.35",
     "rimraf": "^5.0.7",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.23.1",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "yargs": "^18.0.0"
   }
 }
