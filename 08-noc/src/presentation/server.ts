@@ -1,8 +1,5 @@
-
 export class Server {
   public static start() {
-    console.log('Server started...');
+    console.log("Server started...")
   }
 }
-
-

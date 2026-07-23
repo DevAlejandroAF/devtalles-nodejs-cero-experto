@@ -1,10 +1,9 @@
-import { Server } from './presentation/server';
+import { Server } from "./presentation/server.js";
 
-(async() => {
+(async () => {
   main();
 })();
 
 function main() {
   Server.start();
 }
-
